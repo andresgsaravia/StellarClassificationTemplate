@@ -6,7 +6,7 @@ Very simple [cookie cutter][] template for [TASOC][] stellar classification. To 
 pip install -U cookiecutter
 ```
 
-Now create a new peak-bagging project:
+Now create a new classification project:
 
 ```
 $ cookiecutter https://github.com/andresgsaravia/StellarClassificationTemplate
