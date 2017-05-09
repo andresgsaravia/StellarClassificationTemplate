@@ -1,4 +1,4 @@
-.PHONY: clean
+.PHONY: clean test-accuracy confusion-matrix
 
 #################################################################################
 # GLOBALS                                                                       #
@@ -11,10 +11,17 @@ INTDIR="data/intermediate"
 # COMMANDS                                                                      #
 #################################################################################
 
-## Get the raw data and copy/format them appropriately into data/raw
+## Downloads and extracts the simulated data into `./data/raw`. It will warn you if you already have done so. (Due to server permissions this does not work right now).
 get-data:
 	bash ./utils/get_data.sh
 
+## (not implemented) Compares your predictions with the simulated values and reports the accuracy
+test-accuracy:
+	echo "To be implemented"
+
+## (not implemented) Generates a confusion matrix in `visualizations` with your predictions.
+confusion-matrix:
+	echo "To be implemented"
 
 
 #################################################################################
