@@ -1,6 +1,6 @@
 #!/bin/bash
 
-FILES=("Data_Batch1.txt" "Data_Batch1_noisy.txt" "clean_files.zip" "noisy_files.zip")
+FILES=("Data_Batch1.txt" "Data_Batch1_noisy.txt" "clean_files.zip" "noisy_shuf_files.zip")
 
 for f in ${FILES[*]}
 do
@@ -15,5 +15,5 @@ done
 
 echo "Extracting files"
 unzip ./data/raw/clean_files.zip -d ./data/raw/
-unzip ./data/raw/noisy_files.zip -d ./data/raw/
+unzip ./data/raw/noisy_shuf_files.zip -d ./data/raw/
 echo "Done"
